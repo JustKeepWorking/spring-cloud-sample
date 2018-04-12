@@ -6,7 +6,7 @@
 
   <groupId>com.github.nduyhai</groupId>
   <artifactId>time-source</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.0.1</version>
   <packaging>jar</packaging>
 
   <name>time-source</name>
@@ -23,6 +23,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
+    <spring-cloud.version>Edgware.SR2</spring-cloud.version>
   </properties>
 
   <dependencies>
@@ -42,14 +43,14 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dataflow-dependencies</artifactId>
-        <version>1.4.0.RELEASE</version>
+        <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Edgware.SR2</version>
+        <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
